@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: navy;
+  background-image: url(http://robertapaes.com.br/novo/wp-content/uploads/2016/01/shutterstock_354211754.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  text-align: center;
+}
+
+.container {
+  padding: 0 30%;
+}
+
+#bolinha {
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  animation: deslizar 7s infinite;
+}
+
+@keyframes deslizar {
+  0% {
+    opacity: 0%;
+    width: 175px;
+    transform: translateX(-50px);
+  }
+  50% {
+    transform: translateX (50px);
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+    width: 275px;
+    transform: translateX(1250px);
+  }
+}
+
+main img:hover {
+  filter: saturate(2);
+}
+
+label, select {
+  display: block;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+}
+
+input {
+  transition: all 0.5s ease-in-out;
+}
+
+input[type="email"]:hover {
+  background-color: #0066dd;
+}
+
+input[type="text"]:hover {
+  background-color: #0066dd;
+}
+
+textarea {
+  transition: all 0.5s ease-in-out;
+}
+
+textarea:hover {
+  background-color: #0066dd;
+}
+
+select {
+  margin: 0px auto 15px;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12pt;
+  margin: 3% 0;
+  border-radius: 5px;
+  background-color: #0066dd;
+  transition: all 1.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff0000;
+  border-style: double;
+}
+
+fieldset:nth-child(1) {
+  background: #ff0000;
+}
+
+fieldset:last-of-type {
+  background: #e9da01
+}

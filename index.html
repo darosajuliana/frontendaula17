@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bolinha Clube de Praia</title>
+</head>
+
+<body>
+  <main class="container">
+    <section>
+      <img src="./IMG/toppng.com-beach-ball-432x353.png"
+        alt="bola de praia colorida" id="bolinha">
+        
+      <h2>Bolinha Clube de Praia</h2>
+    </section>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Cadastre-se:</legend>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="endereco">Endereço: </label>
+        <textarea name="endereco" id="endereco" cols="22" rows="5"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Escolha sua atividade:</legend>
+        <select name="atividades" id="atividades">
+          <option value="">Escolha uma opção</option>
+          <optgroup label="Atividades">
+            <option value="parque aquático">Parque aquático</option>
+            <option value="brincadeiras">Brincadeiras monitoradas</option>
+            <option value="natacao">Aula de natação</option>
+            <option value="danca">Aula de dança</option>
+          </optgroup>
+          <optgroup label="Festas">
+            <option value="festa1">Festa com nosso buffet</option>
+            <option value="Festa2">Festa sem buffet</option>
+          </optgroup>
+      <fieldset>
+        <legend>Agendar para quando?</legend>
+        <input type="date" name="data" id="data">
+        <input type="time" name="time" id="time">
+      </fieldset>
+      <button type="submit">Confirmar</button>
+      <button type="reset">Cancelar</button>
+    </form>
+  </main>
+</body>
+
+</html>
